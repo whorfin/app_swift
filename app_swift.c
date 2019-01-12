@@ -673,7 +673,6 @@ static int app_exec(struct ast_channel *chan, const char *data)
 	if (!res) {
 		ast_set_write_format(chan, old_writeformat);
 	}
-	ao2_cleanup(old_writeformat);
 #endif
 	ast_module_user_remove(u);
 	return res;
